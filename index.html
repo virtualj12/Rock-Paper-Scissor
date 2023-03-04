@@ -1,0 +1,66 @@
+<!doctype <!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" options="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title> JavaScript - Game</title>
+    
+    </head>
+
+    <body>
+        <header class="header">
+			<div class="container">
+                <h3 class="first"> Let's Play</h3>
+                <h1 class="second">ROCK - PAPER - SCISSOR</h1>
+            </div>
+		</header>
+        <main>
+            <div class="scoreboard">
+              <div class="player-score">
+                <p>Player Score:</p>
+                <span id="player-score-value">0</span>
+              </div>
+              <div class="computer-score">
+                <p>Computer Score:</p>
+                <span id="computer-score-value">0</span>
+              </div>
+            </div>
+        </main>
+        <div class="maingame">
+            <div class="gCon" id="player">
+                <p>Player</p>
+                <div class="options" id="player-options">
+                  <button class="hands">✊</button>
+                  <button class="hands">🖐</button>
+                  <button class="hands">✌️</button>
+                </div>
+              </div>
+              <div class="vs-container">
+                <img src="vs.png" id="vs" alt="" />
+              </div>
+              <div class="gcCon" id="computer">
+                <p>COMPUTER</p>
+                <div class="options">
+                  <p class="hands" id="hands-flash"></p>
+                </div>
+              </div>
+        </div>
+            <h2>Match History</h2>
+            <table id="match-history">
+              <tr>
+                <th>Player</th>
+                <th>Computer</th>
+                <th>Result</th>
+              </tr>
+            </table>
+            <button id="reset-button">Reset</button>
+          
+          <script src="jsgame.js">
+
+          </script>
+    </body>
+</html>
